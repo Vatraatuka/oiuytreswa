@@ -1,0 +1,366 @@
+/* Reset margin dan padding di seluruh halaman */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Menggunakan box-sizing border-box untuk memastikan padding dan border dimasukkan dalam total ukuran elemen */
+}
+
+/* Gaya untuk elemen body */
+body {
+  font-family: Arial, sans-serif; /* Menetapkan font keluarga */
+  line-height: 1.6; /* Jarak antar baris */
+  background-color: #6a1b9a; /* Warna latar belakang ungu */
+  color: #fff; /* Warna teks putih untuk kontras lebih baik dengan latar belakang ungu */
+  text-align: justify; /* Menyelaraskan teks agar lebih rata kiri-kanan */
+  overflow-x: hidden; /* Menghindari scroll horizontal */
+  width: 100%; /* Pastikan body tidak melebihi lebar layar */
+}
+
+/* Gaya untuk elemen .top-bar */
+.top-bar {
+  background-color: #333; /* Latar belakang gelap */
+  color: white; /* Teks berwarna putih */
+  padding: 10px 20px; /* Padding 10px atas dan bawah, 20px kiri dan kanan */
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  justify-content: space-between; /* Menyebarkan elemen dengan jarak rata */
+  align-items: center; /* Menyusun elemen secara vertikal di tengah */
+}
+
+/* Gaya untuk tautan di dalam .top-bar */
+.top-bar a {
+  color: #1e90ff; /* Warna biru terang untuk tautan */
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+  margin-left: 15px; /* Jarak 15px di sebelah kiri setiap tautan */
+}
+
+/* Gaya untuk .contact-info di dalam .top-bar */
+.top-bar .contact-info {
+  display: flex; /* Menggunakan flexbox */
+  align-items: center; /* Menyusun elemen secara vertikal di tengah */
+}
+
+/* Gaya untuk ikon sosial di dalam .top-bar */
+.top-bar .social-icons a {
+  color: white; /* Warna putih untuk ikon sosial */
+  margin-left: 15px; /* Jarak 15px antara ikon */
+}
+
+/* Gaya untuk .navbar */
+.navbar {
+  background-color: #4b006e; /* Latar belakang ungu gelap */
+  color: white; /* Teks putih */
+  padding: 15px 20px; /* Padding 15px atas dan bawah, 20px kiri dan kanan */
+  display: flex; /* Menggunakan flexbox */
+  justify-content: space-between; /* Menyebarkan elemen secara rata */
+  align-items: center; /* Menyusun elemen secara vertikal di tengah */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan halus pada navbar */
+}
+
+/* Gaya untuk gambar logo di dalam navbar */
+.navbar img {
+  height: 50px; /* Menetapkan tinggi gambar logo */
+  margin-right: 10px; /* Jarak 10px di sebelah kanan gambar */
+}
+
+/* Gaya untuk .nav-links di dalam navbar */
+.navbar .nav-links {
+  display: flex; /* Menggunakan flexbox */
+  align-items: center; /* Menyusun elemen secara vertikal di tengah */
+}
+
+/* Gaya untuk tautan di dalam .nav-links */
+.navbar .nav-links a {
+  color: white; /* Teks berwarna putih */
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+  margin: 0 15px; /* Jarak 15px di sebelah kiri dan kanan */
+  font-size: 16px; /* Ukuran font yang nyaman untuk navigasi */
+  font-weight: 500; /* Menebalkan teks navigasi */
+}
+
+/* Gaya untuk dropdown di dalam navbar */
+.navbar .nav-links .dropdown {
+  position: relative; /* Posisi relatif untuk menempatkan dropdown secara absolut */
+  display: inline-block; /* Menampilkan dropdown dalam satu baris */
+}
+
+/* Gaya untuk submenu dropdown */
+.navbar .nav-links .dropdown-content {
+  display: none; /* Menyembunyikan dropdown secara default */
+  position: absolute; /* Posisi absolut untuk submenu */
+  background-color: #7569b6; /* Warna latar belakang ungu terang */
+  min-width: 200px; /* Lebar minimal submenu */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan pada submenu */
+  z-index: 1; /* Menampilkan submenu di atas elemen lainnya */
+  top: 100%; /* Menempatkan submenu di bawah dropdown */
+  left: 0; /* Menempatkan submenu di sebelah kiri dropdown */
+  padding: 10px 0; /* Padding di sekitar submenu */
+  transition: all 0.3s ease; /* Transisi halus saat dropdown tampil */
+}
+
+/* Menampilkan submenu saat dropdown di-hover */
+.navbar .nav-links .dropdown:hover .dropdown-content {
+  display: block; /* Menampilkan submenu saat di-hover */
+}
+
+/* Gaya untuk tautan dalam submenu dropdown */
+.navbar .nav-links .dropdown-content a {
+  color: white; /* Teks putih */
+  padding: 12px 20px; /* Padding pada setiap tautan */
+  text-decoration: none; /* Menghilangkan garis bawah */
+  display: block; /* Menampilkan tautan sebagai blok */
+  font-size: 14px; /* Ukuran font lebih kecil */
+}
+
+/* Gaya saat tautan submenu di-hover */
+.navbar .nav-links .dropdown-content a:hover {
+  background-color: #7a1f8f; /* Latar belakang ungu lebih gelap saat hover */
+}
+
+/* Gaya untuk logo navbar */
+.navbar .logo {
+  display: flex; /* Menggunakan flexbox */
+  align-items: center; /* Menyusun logo secara vertikal di tengah */
+}
+
+/* Gaya untuk gambar logo di dalam navbar */
+.navbar .logo img {
+  height: 50px; /* Menetapkan tinggi gambar logo */
+  margin-right: 10px; /* Jarak 10px di sebelah kanan gambar */
+}
+
+/* Gaya untuk teks logo */
+.navbar .logo span {
+  font-size: 24px; /* Ukuran font 24px */
+  font-weight: bold; /* Menebalkan teks logo */
+  color: white; /* Teks berwarna putih */
+}
+
+/* Gaya untuk bendera di navbar */
+.navbar .flag {
+  height: 20px; /* Menetapkan tinggi gambar bendera */
+  width: 30px; /* Menetapkan lebar gambar bendera */
+  margin-left: 10px; /* Jarak 10px di sebelah kiri */
+  align-self: center; /* Menyusun bendera secara vertikal di tengah */
+}
+
+/* Gaya untuk carousel */
+#campusCarousel {
+  position: relative; /* Menetapkan posisi relatif untuk kontainer carousel */
+}
+
+/* Gaya untuk item dalam carousel */
+.carousel-item {
+  height: 500px; /* Menetapkan tinggi item carousel */
+}
+
+/* Gaya untuk gambar dalam carousel */
+.carousel-item img {
+  object-fit: contain; /* Memastikan gambar terlihat sepenuhnya tanpa terpotong */
+  height: 100%; /* Gambar mengisi tinggi item */
+  width: 100%; /* Mengisi lebar item */
+  display: block; /* Menampilkan gambar dalam bentuk blok */
+  margin: 0 auto; /* Menjaga gambar tetap di tengah jika ada ruang kosong */
+}
+
+/* Gaya untuk caption dalam carousel */
+.carousel-caption {
+  bottom: 50px; /* Menempatkan caption 50px dari bawah */
+  text-align: center; /* Menyusun teks di tengah */
+}
+
+/* Gaya untuk judul caption */
+.carousel-caption h5 {
+  font-size: 36px; /* Ukuran font 36px */
+  font-weight: bold; /* Menebalkan teks */
+  color: #fff; /* Teks berwarna putih */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Menambahkan bayangan pada teks */
+}
+
+/* Gaya untuk paragraf caption */
+.carousel-caption p {
+  font-size: 18px; /* Ukuran font 18px */
+  color: #fff; /* Teks berwarna putih */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan pada teks */
+}
+
+/* Gaya untuk bagian promosi */
+.promotions {
+  background-color: #fff; /* Latar belakang putih */
+  padding: 50px 20px; /* Padding vertikal 50px, horizontal 20px */
+  text-align: center; /* Teks rata tengah */
+}
+
+/* Gaya untuk judul bagian promosi */
+.promotions h2 {
+  font-size: 32px; /* Ukuran font 32px */
+  margin-bottom: 30px; /* Margin bawah 30px */
+  color: #003366; /* Warna teks biru gelap */
+  font-weight: 600; /* Menebalkan judul promosi */
+}
+
+/* Gaya untuk baris kolom dalam promosi */
+.promotions .row {
+  display: flex; /* Menggunakan flexbox */
+  justify-content: space-around; /* Menyebarkan kolom dengan jarak rata */
+  text-align: left; /* Teks rata kiri dalam setiap kolom */
+  width: 100%; /* Pastikan row mengisi seluruh lebar kontainer */
+  gap: 20px; /* Memberikan jarak antar kolom */
+}
+
+/* Gaya untuk kolom dalam promosi */
+.promotions .col-md-4 {
+  flex: 1; /* Kolom mengambil ruang yang tersedia */
+  padding: 20px; /* Padding dalam kolom */
+  background-color: #f4f4f4; /* Latar belakang abu-abu muda */
+  border-radius: 8px; /* Sudut melengkung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan pada kolom */
+  transition: all 0.3s ease; /* Transisi halus saat hover */
+}
+
+/* Gaya saat kolom promosi di-hover */
+.promotions .col-md-4:hover {
+  background-color: #003366; /* Latar belakang biru gelap saat hover */
+  color: #fff; /* Teks putih saat hover */
+  transform: translateY(-10px); /* Meningkatkan kolom saat hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+/* Responsif untuk layar kecil (maksimal 768px) */
+@media screen and (max-width: 768px) {
+  /* Mengubah ukuran teks di carousel */
+  .carousel-caption h5 {
+    font-size: 28px; /* Ukuran font lebih kecil */
+  }
+
+  .carousel-caption p {
+    font-size: 16px; /* Ukuran font lebih kecil */
+  }
+
+  /* Mengubah layout kolom dalam promosi */
+  .promotions .row {
+    flex-direction: column; /* Menyusun kolom secara vertikal */
+    align-items: center; /* Menyusun kolom di tengah */
+  }
+
+  .promotions .col-md-4 {
+    width: 80%; /* Lebar kolom menjadi 80% */
+    margin-bottom: 30px; /* Margin bawah */
+  }
+}
+/* Styling untuk menu dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none; /* Secara default disembunyikan */
+  position: absolute;
+  background-color: #4b006e;
+  min-width: 160px;
+  z-index: 1;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Menampilkan dropdown saat hover pada desktop */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #7a1f8f;
+}
+
+/* Responsif untuk perangkat mobile */
+@media screen and (max-width: 768px) {
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    position: static; /* Pastikan dropdown menjadi posisi statis */
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  /* Menggunakan JavaScript untuk menampilkan dropdown ketika klik */
+  .dropdown.active .dropdown-content {
+    display: block;
+  }
+}
+
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling untuk Section Sejarah */
+.Sejarah {
+  background-color: #ffffff;
+  padding: 50px 20px;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.sejarah-image {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.carousel-caption {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}

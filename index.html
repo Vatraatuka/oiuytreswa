@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KULIAH PAKAR</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link ke CSS eksternal -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link ke Bootstrap untuk Carousel -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="contact-info">
+        <span> Informasi dan Layanan </span>
+        <a href="tel:+6236222570"> 📞 (0362) 22570 </a>
+        <a href="mailto:fk@undiksha.ac.id"> 📧 fk@undiksha.ac.id </a>
+      </div>
+      <div class="social-icons">
+        <a href="#">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+        <a href="#">
+          <i class="fas fa-times"> </i>
+        </a>
+        <a href="#">
+          <i class="fab fa-youtube"> </i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"> </i>
+        </a>
+        <a href="#">
+          <i class="fas fa-rss"> </i>
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="logo">
+        <img
+          alt="Logo Fakultas Kedokteran Undiksha"
+          height="100"
+          src="R.png"
+          width="50"
+        />
+        <span> STIKES BAKTARA </span>
+      </div>
+
+      <!-- Hamburger Icon (Mobile) -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html"> Beranda </a>
+
+        <!-- Dropdown for Profil -->
+        <div class="dropdown">
+          <a href="Profil.html">Profil</a>
+          <div class="dropdown-content">
+            <a href="Tentangkami.html">TENTANG KAMI</a>
+            <a href="#">Sejarah Fakultas Kedokteran</a>
+            <a href="#">Visi dan Misi</a>
+            <a href="#">Struktur Organisasi</a>
+            <a href="#">Pimpinan dan Manajemen</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#">Akademik</a>
+          <div class="dropdown-content">
+            <a href="#">Submenu 1</a>
+            <a href="#">Submenu 2</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#">Penelitian & P2M</a>
+          <div class="dropdown-content">
+            <a href="#">Submenu 1</a>
+            <a href="#">Submenu 2</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#">Kemahasiswaan</a>
+          <div class="dropdown-content">
+            <a href="#">Submenu 1</a>
+            <a href="#">Submenu 2</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#">Jaminan Mutu</a>
+          <div class="dropdown-content">
+            <a href="#">Submenu 1</a>
+            <a href="#">Submenu 2</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#">PPID</a>
+          <div class="dropdown-content">
+            <a href="#">Submenu 1</a>
+            <a href="#">Submenu 2</a>
+          </div>
+        </div>
+        <img
+          alt="Indonesian Flag"
+          class="flag"
+          src="c:\Users\INTEL\Downloads\PELAPORAN\Image\download.png"
+        />
+      </div>
+    </div>
+
+    <!-- Carousel Gambar -->
+    <div id="campusCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="c:\Users\INTEL\Downloads\PELAPORAN\Image\BJHASFSHJ.jpg"
+            class="d-block w-100"
+            alt="Gambar Promosi 1"
+          />
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="NARASUMBER.jpg"
+            class="d-block w-100"
+            alt="Gambar Promosi 2"
+          />
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="BJHASFSHJ.jpg"
+            class="d-block w-100"
+            alt="Gambar Promosi 3"
+          />
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#campusCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#campusCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Sejarah Kampus -->
+    <section class="Sejarah">
+      <div class="container text-center">
+        <h2>PROFIL SEKOLAH TINGGI ILMU KESEHATAN BAKTI NUSANTARA GORONTALO</h2>
+        <p>
+          Pendidikan Nasional bertujuan mencerdaskan kehidupan bangsa dan
+          mengembangkan manusia Indonesia seutuhnya melalui pembentukan manusia
+          yang beriman dan bertakwa kepada Tuhan Yang Maha Esa serta berbudi
+          pekerti luhur, memiliki pengetahuan dan keterampilan, sehat jasmani
+          dan rohani, berkepribadian yang terpuji, percaya diri, mandiri,
+          disiplin, jujur, mampu bekerja keras dan memiliki rasa tanggung jawab
+          kebangsaan dan juga pada masyarakat. Sekolah Tinggi Ilmu Kesehatan
+          Bakti Nusantara Gorontalo sebagai lembaga pendidikan ikut bertanggung
+          jawab untuk mencerdaskan kehidupan bangsa melalui pendidikan dan
+          melahirkan peserta didik, menjadi anggota masyarakat yang memiliki
+          kemampuan, kecakapan, keterampilan dan mengemban/menyebarluaskan ilmu
+          pengetahuan, teknologi dan seni di bidang Kesehatan, untuk
+          meningkatkan derajat Kesehatan keluarga, masyarakat, bangsa dan
+          Negara. Untuk melaksanakan peran pendidikan tersebut, Sekolah Tinggi
+          Ilmu Kesehatan Bakti Nusantara Gorontalo memerlukan suatu landasan
+          sebagai pedoman dasar guna merencanakan, menyelenggarakan kegiatan
+          maupun mengembangkan program pendidikan serta rujukan pengembangan
+          peraturan umum, peraturan akademik dan prosedur operasional yang
+          berlaku. Dengan demikian, maka Statuta Sekolah Tinggi Ilmu Kesehatan
+          Bakti Nusantara Gorontalo ini ditetapkan untuk menjadi pedoman
+          pelaksanaan tugas dan tanggung jawab Sivitas Akademika.
+        </p>
+
+        <!-- Menambahkan gambar di bawah teks -->
+        <img
+          src="pengelola-1.jpg"
+          alt="Sekolah Tinggi Ilmu Kesehatan Bakti Nusantara"
+          class="sejarah-image"
+        />
+
+        <div class="row">
+          <div class="carousel-caption"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promosi Kampus -->
+    <section class="promotions">
+      <div class="container text-center">
+        <h2>Kenapa Memilih Stikes Bakti Nusantara Gorontalo?</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Pendidikan Berkualitas</h4>
+            <p>
+              Hukum kesehatan mewajibkan penyelenggara layanan kesehatan untuk
+              menjaga integritas dan kerahasiaan rekam medis pasien, serta
+              memberikan akses informasi medis hanya kepada pihak yang
+              berwenang, sesuai dengan prinsip-prinsip hukum yang berlaku, demi
+              melindungi hak-hak pasien.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4>bvgh</h4>
+            <p>
+              Laboratorium canggih dan fasilitas medis lengkap untuk mendukung
+              proses pembelajaran.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4>Tenaga Pengajar Profesional</h4>
+            <p>
+              Di bawah bimbingan dosen-dosen dengan keahlian di bidangnya, Anda
+              akan siap menghadapi tantangan medis masa depan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google form -->
+    <section>
+      <div class="container text-center">
+        <h5>PENDAFTARAN</h5>
+        <div class="row">
+          <!-- Menyematkan Google Form ke dalam halaman -->
+          <div class="col-12">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLScIIbc-aoZ5X5hjuwRlbehLgZ7Cj1pckmRrnGJzvvynJIvtvg/viewform?embedded=true"
+              width="640"
+              height="1416"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              >Memuat…</iframe
+            >
+          </div>
+        </div>
+        <!-- Menutup div.row -->
+      </div>
+      <!-- Menutup div.container -->
+    </section>
+    <!-- Menutup section -->
+
+    <script>
+      // Menambahkan event listener untuk klik pada dropdown
+      const dropdowns = document.querySelectorAll(".dropdown");
+
+      dropdowns.forEach((dropdown) => {
+        dropdown.addEventListener("click", function (event) {
+          // Mencegah link terbuka saat klik
+          event.preventDefault();
+
+          // Toggle class 'active' untuk menampilkan dropdown
+          dropdown.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
